@@ -151,12 +151,6 @@ namespace DotNetToJScript
         {
             try
             {
-                if (Environment.Version.Major != 2)
-                {
-                    WriteError("This tool should only be run on v2 of the CLR");
-                    Environment.Exit(1);
-                }
-
                 string output_file = null;
                 string entry_class_name = DEFAULT_ENTRY_CLASS_NAME;
                 string additional_script = String.Empty;
