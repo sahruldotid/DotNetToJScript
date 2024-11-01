@@ -203,6 +203,9 @@ namespace DotNetToJScript
                     case ScriptLanguage.VBScript:
                         generator = new VBScriptGenerator();
                         break;
+                    case ScriptLanguage.HTAJScript:
+                        generator = new HTAJScriptGenerator();
+                        break;
                     default:
                         throw new ArgumentException("Invalid script language option");
                 }
